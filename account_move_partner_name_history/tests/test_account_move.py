@@ -80,3 +80,42 @@ class TestAccountMove(AccountTestInvoicingCommon):
                 lambda m: m.invoice_date == record_date
             )
             self.assertEqual(expected_name, move_with_ctx.partner_id.name)
+
+    def test_not_invoice_partner_name(self):
+        """Moves that are not invoices use account.move.date."""
+        # Arrange
+        one_day = relativedelta(days=1)
+        partner = self.partner_a
+        original_partner_name = partner.name
+        new_partner_name, change_date = "New name", datetime.date(2020, 1, 1)
+        _set_partner_name(partner, new_partner_name, date=change_date)
+
+        # Act
+        moves = (
+            self.env["account.move"]
+            .create(
+                [
+                    {
+                        "move_type": "entry",
+                        "partner_id": partner.id,
+                        "date": date,
+                    }
+                    for date in [
+                        change_date - one_day,
+                        change_date + one_day,
+                    ]
+                ]
+            )
+            .with_context(
+                use_partner_name_history=True,
+            )
+        )
+
+        # Assert
+        old_move, new_move = moves.sorted("date")
+
+        self.assertFalse(old_move.invoice_date)
+        self.assertEqual(old_move.partner_id.name, original_partner_name)
+
+        self.assertFalse(new_move.invoice_date)
+        self.assertEqual(new_move.partner_id.name, new_partner_name)

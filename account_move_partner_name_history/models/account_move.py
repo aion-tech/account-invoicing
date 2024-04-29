@@ -7,5 +7,11 @@ from odoo import models
 class AccountMove(models.Model):
     _inherit = "account.move"
     _partner_name_history_field_map = {
-        "partner_id": "invoice_date",
+        "partner_id": "_get_partner_name_history_date",
     }
+
+    def _get_partner_name_history_date(self):
+        self.ensure_one()
+        return (
+            self.invoice_date if self.is_invoice(include_receipts=True) else self.date
+        )
