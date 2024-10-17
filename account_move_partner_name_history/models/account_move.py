@@ -11,7 +11,6 @@ class AccountMove(models.Model):
     }
 
     def _get_partner_name_history_date(self):
-        self.ensure_one()
         return (
             self.invoice_date if self.is_invoice(include_receipts=True) else self.date
         )

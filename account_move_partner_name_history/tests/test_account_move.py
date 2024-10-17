@@ -119,3 +119,22 @@ class TestAccountMove(AccountTestInvoicingCommon):
 
         self.assertFalse(new_move.invoice_date)
         self.assertEqual(new_move.partner_id.name, new_partner_name)
+
+    def test_empty_invoice_and_line(self):
+        """The name of the partner of empty moves (and lines) is empty."""
+        # Arrange
+        empty_move = (
+            self.env["account.move"]
+            .browse()
+            .with_context(
+                use_partner_name_history=True,
+            )
+        )
+        empty_move_line = empty_move.line_ids
+        # pre-condition
+        self.assertFalse(empty_move)
+        self.assertFalse(empty_move_line)
+
+        # Assert
+        self.assertFalse(empty_move.partner_id.name)
+        self.assertFalse(empty_move_line.partner_id.name)

@@ -11,5 +11,4 @@ class AccountMoveLine(models.Model):
     }
 
     def _get_partner_name_history_date(self):
-        self.ensure_one()
         return self.move_id._get_partner_name_history_date()
