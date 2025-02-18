@@ -27,15 +27,17 @@ addon | version | maintainers | summary
 [account_invoice_blocking](account_invoice_blocking/) | 16.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
 [account_invoice_change_currency](account_invoice_change_currency/) | 16.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![rolandojduartem](https://github.com/rolandojduartem.png?size=30px)](https://github.com/rolandojduartem) | Allows to change currency of Invoice by wizard
 [account_invoice_check_total](account_invoice_check_total/) | 16.0.1.0.0 |  | Check if the verification total is equal to the bill's total
+[account_invoice_clearing](account_invoice_clearing/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Account invoice clearing wizard
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 16.0.1.0.0 |  | Account Invoice CRM Tag
 [account_invoice_currency_taxes](account_invoice_currency_taxes/) | 16.0.1.0.2 |  | Taxes in company currency in invoice report
 [account_invoice_default_code_column](account_invoice_default_code_column/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display Default code product in a dedicated column on invoice reports
+[account_invoice_discount_date](account_invoice_discount_date/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Set the early discount date on invoices
 [account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 16.0.1.1.1 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.1.0.4 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 16.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_line_default_account](account_invoice_line_default_account/) | 16.0.1.0.0 |  | Account Invoice Line Default Account
-[account_invoice_mass_sending](account_invoice_mass_sending/) | 16.0.1.1.2 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
+[account_invoice_mass_sending](account_invoice_mass_sending/) | 16.0.1.1.3 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
 [account_invoice_merge](account_invoice_merge/) | 16.0.1.0.1 |  | Merge invoices in draft
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 16.0.1.0.0 |  | Account Invoice Payment Retention
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display invoices date due when using payment terms
@@ -47,14 +49,15 @@ addon | version | maintainers | summary
 [account_invoice_refund_link](account_invoice_refund_link/) | 16.0.1.0.4 |  | Show links between refunds and their originator invoices.
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 16.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Account Invoice Refund Reason.
+[account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 16.0.1.0.0 |  | Allow to Reinvoice a Refund
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 16.0.1.0.0 |  | For invoices targetting multiple sale order addsections with sale order name.
-[account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 16.0.1.0.4 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
+[account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 16.0.1.0.7 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 16.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 16.0.1.0.0 |  | Purchase Self Invoice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
 [account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
 [account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
-[account_invoice_tax_note](account_invoice_tax_note/) | 16.0.1.0.0 |  | Print tax notes on customer invoices
+[account_invoice_tax_note](account_invoice_tax_note/) | 16.0.1.0.1 |  | Print tax notes on customer invoices
 [account_invoice_tax_required](account_invoice_tax_required/) | 16.0.1.1.0 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 16.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_tree_currency](account_invoice_tree_currency/) | 16.0.1.0.0 |  | Show currencies in the invoice tree view
@@ -64,6 +67,7 @@ addon | version | maintainers | summary
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | New invoice menu that combine invoices and refunds
 [account_move_auto_post_ref](account_move_auto_post_ref/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Propagate customer ref when auto-generating next recurring invoice
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Account Move Cancel Confirm
+[account_move_sent_usability](account_move_sent_usability/) | 16.0.1.0.1 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
 [account_move_substate](account_move_substate/) | 16.0.1.0.1 |  | Account Move Sub State
 [account_move_tier_validation](account_move_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Account Moves to support a tier validation process.
 [account_receipt_journal](account_receipt_journal/) | 16.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Define and use journals dedicated to receipts
@@ -85,6 +89,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
 [sale_order_invoicing_queued](sale_order_invoicing_queued/) | 16.0.1.0.0 |  | Enqueue sales order invoicing
+[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 16.0.1.0.0 |  | Add timesheet details in invoice line
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock account move reset to draft
 [stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.1 |  | Stock Picking Invoicing
